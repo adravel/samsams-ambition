@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         // Update animation and move
         if (change != Vector3.zero)
         {
-            transform.Translate(new Vector3(change.x, change.y).normalized * speed * Time.deltaTime);
+            myRigidBody.MovePosition(transform.position + change.normalized *speed * Time.deltaTime);
             animator.SetFloat("moveX", change.x);
             animator.SetFloat("moveY", change.y);
             animator.SetBool("isMoving", true);
