@@ -34,7 +34,7 @@ public class AnimalMovement : MonoBehaviour
             walkCounter -= Time.deltaTime;
             animator.SetFloat("moveX", myRigidBody.velocity.x);
             animator.SetFloat("moveY", myRigidBody.velocity.y);
-            animator.SetBool("isMoving", true);
+            animator.SetBool("isWalking", true);
 
             if (walkCounter < 0)
             {
@@ -61,7 +61,7 @@ public class AnimalMovement : MonoBehaviour
         else
         {
             waitCounter -= Time.deltaTime;
-            animator.SetBool("isMoving", false);
+            animator.SetBool("isWalking", false);
 
             myRigidBody.velocity = Vector2.zero;
 

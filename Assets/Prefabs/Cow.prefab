@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 5676464451208286103}
   - component: {fileID: 5676464451208286120}
   - component: {fileID: 7813922340228751195}
-  m_Layer: 0
+  - component: {fileID: 6781966538108243374}
+  m_Layer: 6
   m_Name: Cow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,3 +152,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6781966538108243374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5676464451208286121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0d3a546a44ed84e88d50eade6f2fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectableName: Cow
+  isCollected: 0
